@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil Facebook — Oscar Iván Guardiola García</title>
+  <style>
+    :root {
+      --fb-blue: #1877F2;
+      --bg: #f0f2f5;
+      --card-bg: #ffffff;
+      --text-dark: #050505;
+      --text-muted: #65676b;
+      --radius: 8px;
+      --shadow: 0 2px 5px rgba(0,0,0,0.15);
+      --maxw: 600px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .profile-card {
+      background: var(--card-bg);
+      width: 100%;
+      max-width: var(--maxw);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .cover {
+      width: 100%;
+      height: 200px;
+      background: var(--fb-blue);
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid var(--card-bg);
+      background: #ccc;
+      position: relative;
+      top: -60px;
+      margin: 0 auto;
+    }
+    .info {
+      text-align: center;
+      padding: 0 20px 20px;
+      margin-top: -40px;
+    }
+    .info h1 {
+      margin: 8px 0 4px;
+      font-size: 24px;
+      color: var(--text-dark);
+    }
+    .info p.motivacion {
+      margin: 4px 0;
+      font-style: italic;
+      color: var(--text-muted);
+    }
+    .info p.gustos {
+      margin: 12px 0 0;
+      color: var(--text-dark);
+    }
+    .images-row {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px 0;
+    }
+    .images-row img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+    .feed {
+      padding: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .post {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .post .meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .post .meta .avatar-small {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+    .post .meta .author {
+      font-weight: bold;
+      color: var(--text-dark);
+    }
+    .post .meta .time {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-left: 5px;
+    }
+    .post h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      color: var(--text-dark);
+    }
+    .post p {
+      margin: 0;
+      color: var(--text-dark);
+    }
+    .actions {
+      margin-top: 12px;
+      display: flex;
+      gap: 15px;
+    }
+    .actions button {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .actions button:hover {
+      color: var(--fb-blue);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="cover"></div>
+    <div class="avatar"></div>
+    <div class="info">
+      <h1>Oscar Iván Guardiola García</h1>
+      <p class="motivacion">"El éxito no es la clave de la felicidad; la felicidad es la clave del éxito."</p>
+      <p class="gustos">Me encanta disfrutar de buena comida, aprender nuevas tecnologías, patinar/hockey y compartir momentos con amigos.</p>
+    </div>
+    <div class="images-row">
+      <img src="imagess/comida.png" alt="Comida">
+      <img src="imagess/fumando.png" alt="Hombre fumando">
+      <img src="imagess/patinador.png" alt="Patinador hockey">
+    </div>
+    <div class="feed">
+      <div class="post">
+        <div class="meta">
+          <div class="avatar-small"></div>
+          <div class="author">Oscar Iván</div>
+          <div class="time">· Hace 2 h</div>
+        </div>
+        <h3>Disfrutando de una buena comida</h3>
+        <p>Hoy probé un platillo nuevo y me recordó que las experiencias simples también cuentan.</p>
+        <div class="actions">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="meta">
+          <div class="avatar-small"></div>
+          <div class="author">Oscar Iván</div>
+          <div class="time">· Hace 1 día</div>
+        </div>
+        <h3>Entrenamiento de hockey</h3>
+        <p>Practiqué patinaje hoy. Cada caída me enseña algo nuevo.</p>
+        <div class="actions">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
